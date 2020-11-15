@@ -13,11 +13,11 @@ namespace western {
 
 class Cowboy {
  private:
-  const std::string Name;
-  int Age{};
-  [[maybe_unused]] int GunCount;
+  const std::string Name;  // const properties initialized in ctor
+  int Age{};               // others not initialized to be initialized
+  int GunCount;            // class properties capitalized
 
-  void makeBang(const int& howMany);
+  void makeBang(const int& howMany);  // methods begins small
 
  public:
   explicit Cowboy(std::string name, int gunCount = 1);
@@ -25,9 +25,9 @@ class Cowboy {
 
   void shoot(western::Cowboy* who);
 
-  [[nodiscard]] int age() const { return Age; }
-  [[nodiscard]] std::string name() const { return Name; }
-  void age(int age) { Age = age; }
+  int age() const { return Age; }            // getter style
+  void age(int age) { Age = age; }           // setter style
+  std::string name() const { return Name; }  // all getters should be const
 };
 
 }  // namespace western
