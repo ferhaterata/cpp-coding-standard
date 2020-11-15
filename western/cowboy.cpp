@@ -25,9 +25,9 @@ western::Cowboy::~Cowboy() { std::cout << "RIP" << std::endl; }
 // A aging ~ shooting relationship of a Cowboy
 void western::Cowboy::shoot(western::Cowboy* who) {
   Age++;
-  int SomeNumber = 5 + 7 * 3;
-  makeBang(SomeNumber);
-  if (SomeNumber > 10) {
+  int someNumber = 5 + 7 * 3;
+  makeBang(someNumber);
+  if (someNumber > 10) {
     return;
   }
   switch (Age) {
@@ -40,8 +40,8 @@ void western::Cowboy::shoot(western::Cowboy* who) {
 }
 
 // -----------------------------------------------------------------------------
-void western::Cowboy::makeBang(const int& HowMany) {
-  for (int i = 0; i < HowMany; ++i) std::cout << "Bang!" << std::endl;
+void western::Cowboy::makeBang(const int& howMany) {
+  for (int i = 0; i < howMany; ++i) std::cout << "Bang!" << std::endl;
 }
 
 // -----------------------------------------------------------------------------
