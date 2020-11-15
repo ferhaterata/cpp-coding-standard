@@ -27,7 +27,7 @@ class Cowboy {
 
   int age() const { return Age; }            // getter style
   void age(int age) { Age = age; }           // setter style
-  std::string name() const { return Name; }  // all getters should be const
+  std::string name() const { return Name; }  // all getters are mostly const
 };
 
 }  // namespace western
