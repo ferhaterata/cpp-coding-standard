@@ -6,10 +6,13 @@
 
 #include "western/cowboy.hpp"
 
+using Cow_Girl = western::Cowboy;
+using Cow_Boy = western::Cowboy;
+
 int main() {
-  western::Cowboy Amy{"Amy"};             // significant objects capitalized.
-  western::Cowboy Angus("Angus", 2);      // same
-  western::Cowboy* currentCowboy = &Amy;  // pointers and other minors not
+  Cow_Girl Amy{"Amy"};                      // significant objects capitalized.
+  Cow_Boy Angus("Angus", 2);                // same
+  western::Cowboy* currentCowboy = &Angus;  // pointers and other minors not
   Amy.shoot(currentCowboy);
   return 0;
 }
